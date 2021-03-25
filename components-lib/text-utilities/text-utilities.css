@@ -1,0 +1,32 @@
+.heading{
+    letter-spacing: 0.1rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.normal{
+    font-weight: 9
+}
+
+.colored-heading{
+    color: var(--primary);
+}
+
+.shadow-heading{
+    color: var(--darkgrey);
+    text-shadow: 2px 2px var(--primary);
+}
+
+
+.small-text{
+    font-size: small;
+}
+
+.gray-text{
+    color: var(--darkgrey);
+   font-weight: bold;
+}
+
+.center-text{
+    text-align: center;
+}

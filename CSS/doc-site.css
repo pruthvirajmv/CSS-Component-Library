@@ -1,0 +1,179 @@
+/* Doc Site styles */
+
+
+.doc-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        "compo-nav compo-doc"
+        "doc-footer doc-footer";
+    position: relative;
+    column-gap: 2rem;
+    height: 100%;
+    /* width: max-content; */
+    overflow: auto;
+
+}
+
+.components-nav {
+    grid-area: compo-nav;
+    padding: 5px 20px;
+    text-align: left;
+    position: fixed;    
+}
+
+.components-nav>ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    padding: 5px 20px; 
+    overflow: scroll;
+    width: 100%;
+    height: 50vh;
+
+}
+
+.components-nav>ul li {
+    color: var(--darkgrey);
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.components-doc {
+    grid-area: compo-doc;
+    text-align: left;
+    padding: 5px 20px;
+    position: relative;
+    scroll-margin-top: 10rem;
+}
+
+.doc-footer{
+    grid-area: doc-footer;
+    width: 100%;
+}
+
+/* Components style */
+
+.component {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 0.5px solid var(--primary);
+}
+
+.component>h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 1rem;
+}
+
+.component > .description{
+    font-size: 1.2rem;
+    
+}
+
+.component>h3 {
+    padding-top: 0.5rem;
+    border-top: 0.5px solid lightgray;
+}
+
+.avatar-examples{
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.alert-examples {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+    padding: 10px 10px;
+    flex-wrap: wrap;
+}
+
+
+.doc-site.floating-action-button {
+    position: fixed;
+    bottom: 5rem;
+    right: 3rem;
+    color: white;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .doc-layout {
+        display: inherit;
+    }
+
+    .components-nav {
+        display: none;
+    }
+
+    .components-doc {
+        display: block;
+        text-align: left;
+        padding: 0.5rem 1.5rem;
+        
+    }
+
+    .component {
+        align-items: left;
+        width: 100%;
+        margin: auto;
+        position: relative;
+    }
+
+    .doc-site-hamburger-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        row-gap: 1rem;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        opacity: 0.8;
+        padding: 20px 20px;
+        color: var(--primary);
+        font-weight: bold;
+    }
+
+    .hamburger-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .doc-site-hamburger-menu .hamburger{
+        align-self: flex-end;
+    }
+
+    .doc-site-hamburger-menu  ul{
+        list-style: none;
+    }
+
+    .doc-site-hamburger-menu  ul  li{
+        padding-bottom: 0.5rem;
+    }
+}
+
+
+
+
+
+
+

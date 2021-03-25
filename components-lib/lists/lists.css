@@ -1,0 +1,17 @@
+:root{
+    --primary: #01dcfc;
+}
+
+.lists{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+.lists>li{
+    border: 1px solid lightgrey;
+    padding: 5px 10px;
+    
+}
+
+.spaced-list > li{
+    margin: 10px 0px ;
+}

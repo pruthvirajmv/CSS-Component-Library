@@ -1,0 +1,25 @@
+.alert{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: max-content; 
+    text-align: center;   
+    /* font-weight: bold; */
+}
+
+.success-alert{
+    background-color: #A7F3D0 ;
+}
+
+.error-alert{
+    background-color: #FCA5A5;
+}
+
+.warning-alert{
+    background-color:  #FEF3C7;
+}
+
+.info-alert{
+    background-color:  #C7D2FE;
+}

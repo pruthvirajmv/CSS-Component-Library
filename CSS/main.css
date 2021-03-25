@@ -1,0 +1,179 @@
+
+/* Import Components CSS */
+
+@import url("../components-lib/avatars/avatar.css");
+@import url("../components-lib/alerts/alert.css");
+@import url("../components-lib/badges/badge.css");
+@import url("../components-lib/button/button.css");
+@import url("../components-lib/cards/cards.css");
+@import url("../components-lib/images/image.css");
+@import url("../components-lib/input/input.css");
+@import url("../components-lib/lists/lists.css");
+@import url("../components-lib/nav/navBar.css");
+@import url("../components-lib/modal/modal.css");
+@import url("../components-lib/rating/rating.css");
+@import url("../components-lib/grids/grids.css");
+@import url("../components-lib/text-utilities/text-utilities.css");
+@import url("../components-lib/toasts/toasts.css");
+@import url("../components-lib/notify/notify.css");
+
+
+/* Font Import*/
+
+ @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+/* Doc site styles */
+
+@import url("./doc-site.css");
+
+
+/* Landing page CSS */
+
+:root {
+    --primary: #01dcfc;
+    --darkgrey: #4B5563;
+    --gray: gray;
+    --gray50: #F9FAFB;
+    --bgcolor: #E5E7EB;
+    /* #EEF2FF; */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    background-color: var(--bgcolor);
+    font-family: 'Lexend', sans-serif;
+    scroll-behavior: smooth;
+    padding-top: 6rem;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.shadow-text-white{
+    font-size: 2rem;
+    text-shadow: 1px 1px whitesmoke;
+}
+
+
+.suit-header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.suit-container{
+    height: 100%;
+    overflow: auto;
+}
+
+.suit-body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.suit-body .suit-about {
+    width: 55%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: left;
+    color: var(--darkgrey);
+}
+
+.suit-about > h1{
+    color: var(--primary);
+    font-size: 4rem;
+    font-weight: 1000;
+    text-shadow: 2px 2px var(--darkgrey);
+}
+
+
+.suit-body .suit-avatar {
+    max-width: 35%;
+}
+
+.suit-body footer {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+footer nav {
+    margin-top: 5rem;
+}
+
+
+.user-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    row-gap: 2rem;
+    font-size: 1.5rem;
+    color: var(--darkgrey);
+}
+
+.user-guide  article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.user-guide > h2{
+    color: var(--primary);
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .hamburger-menu {
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        row-gap: 1rem;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        background-color: black;
+        opacity: 0.8;
+        padding: 20px 20px;
+        color: var(--primary);
+        font-weight: bold;
+    }
+
+    .hamburger-menu .hamburger{
+        align-self: flex-end;
+    }
+}
