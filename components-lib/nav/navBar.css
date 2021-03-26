@@ -20,7 +20,7 @@
 }
 
 .nav.dark{
-    background-color: var(--gray);
+    background-color: black;
     color: var(--primary);
 }
 

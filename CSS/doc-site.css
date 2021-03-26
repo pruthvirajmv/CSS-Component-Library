@@ -8,7 +8,7 @@
         "compo-nav compo-doc"
         "doc-footer doc-footer";
     position: relative;
-    column-gap: 2rem;
+    column-gap: 0.5rem;
     height: 100%;
     /* width: max-content; */
     overflow: auto;
@@ -28,7 +28,7 @@
     padding: 5px 20px; 
     overflow: scroll;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
 
 }
 
@@ -44,9 +44,10 @@
 .components-doc {
     grid-area: compo-doc;
     text-align: left;
-    padding: 5px 20px;
+    padding: 5px 40px;
     position: relative;
     scroll-margin-top: 10rem;
+    /* color: #ffa500; */
 }
 
 .doc-footer{
@@ -104,8 +105,8 @@
 .doc-site.floating-action-button {
     position: fixed;
     bottom: 5rem;
-    right: 3rem;
-    color: white;
+    right: 3vw;
+    color: black;
 }
 
 
@@ -145,7 +146,7 @@
         width: 100%;
         height: auto;
         background-color: black;
-        opacity: 0.8;
+        opacity: 0.9;
         padding: 20px 20px;
         color: var(--primary);
         font-weight: bold;
@@ -169,6 +170,7 @@
     .doc-site-hamburger-menu  ul  li{
         padding-bottom: 0.5rem;
     }
+
 }
 
 

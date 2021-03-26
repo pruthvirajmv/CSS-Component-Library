@@ -34,8 +34,7 @@
     --darkgrey: #4B5563;
     --gray: gray;
     --gray50: #F9FAFB;
-    --bgcolor: #E5E7EB;
-    /* #EEF2FF; */
+    --bgcolor: whitesmoke;
 }
 
 * {
@@ -52,10 +51,9 @@ html, body{
 body {
     text-align: center;
     margin: auto;
-    background-color: var(--bgcolor);
     font-family: 'Lexend', sans-serif;
     scroll-behavior: smooth;
-    padding-top: 6rem;
+    padding-top: 5rem;
 }
 
 button {
