@@ -1,13 +1,13 @@
 
-
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
-    /* margin-bottom: 20px; */
+    padding: 1rem 1rem;
     width: 100%;
     height: auto;
+    position: fixed;
+    left: 0;
 }
 
 .nav>h3{
@@ -19,12 +19,12 @@
     color: inherit;
 }
 
-.nav.dark{
+.nav-dark{
     background-color: black;
     color: var(--primary);
 }
 
-.nav.light{
+.nav-light{
     border: 1px solid var(--primary);
     color:black;
 }
@@ -37,7 +37,7 @@
     flex-wrap: wrap;
 }
 .nav-list>li{
-    padding: 5px 10px;
+    padding: 1rem 1.5rem;
 }
 
 .hamburger{
@@ -54,7 +54,7 @@
         color: inherit;
         background-color:inherit ;
         border: none;
-        padding-right: 10px ;
+        margin-right: 1rem ;
     }
 }
 

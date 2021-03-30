@@ -4,29 +4,29 @@
     font-weight: 900;
 }
 
-.normal{
+.heading-normal{
     font-weight: 9
 }
 
-.colored-heading{
+.heading-colored{
     color: var(--primary);
 }
 
-.shadow-heading{
+.heading-shadow{
     color: var(--darkgrey);
     text-shadow: 2px 2px var(--primary);
 }
 
 
-.small-text{
+.text-small{
     font-size: small;
 }
 
-.gray-text{
+.text-gray{
     color: var(--darkgrey);
    font-weight: bold;
 }
 
-.center-text{
+.text-center{
     text-align: center;
 }

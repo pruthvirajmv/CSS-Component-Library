@@ -1,4 +1,3 @@
-
 /* Import Components CSS */
 
 @import url("../components-lib/avatars/avatar.css");
@@ -20,11 +19,11 @@
 
 /* Font Import*/
 
- @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 
 /* Doc site styles */
-
 @import url("./doc-site.css");
+
 
 
 /* Landing page CSS */
@@ -35,6 +34,17 @@
     --gray: gray;
     --gray50: #F9FAFB;
     --bgcolor: whitesmoke;
+    --badgeColor:#4B5563;
+
+    /* alert colors */
+    --alertSuccesColor: #A7F3D0;
+    --alertErrorColor: #FCA5A5;
+    --alertWarningColor: #FEF3C7;
+    --alertInfoColor: #C7D2FE;
+    --alertSuccesColorBorder: #059669;
+    --alertErrorColorBorder: #EF4444;
+    --alertWarningColorBorder: #FCD34D;
+    --alertInfoColorBorder: #60A5FA;
 }
 
 * {
@@ -43,22 +53,16 @@
     box-sizing: border-box;
 }
 
-html, body{
-    overflow: hidden;
-    height: 100%;
-}
 
 body {
     text-align: center;
     margin: auto;
     font-family: 'Lexend', sans-serif;
     scroll-behavior: smooth;
-    padding-top: 5rem;
 }
 
 button {
     cursor: pointer;
-    outline: none;
 }
 
 a {
@@ -66,23 +70,25 @@ a {
     color: inherit;
 }
 
-.shadow-text-white{
+.shadow-text-white {
     font-size: 2rem;
     text-shadow: 1px 1px whitesmoke;
 }
 
-
-.suit-header{
-    position: fixed;
-    top: 0;
-    width: 100%;
+.suit-header {
     z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 0;
 }
 
-.suit-container{
-    height: 100%;
-    overflow: auto;
+.suit-header .nav {
+    position: sticky;
+    top: 0;
 }
+
+
+
 
 .suit-body {
     display: flex;
@@ -106,7 +112,7 @@ a {
     color: var(--darkgrey);
 }
 
-.suit-about > h1{
+.suit-about>h1 {
     color: var(--primary);
     font-size: 4rem;
     font-weight: 1000;
@@ -126,8 +132,21 @@ a {
     flex-wrap: wrap;
 }
 
-footer nav {
+.suit-footer{
     margin-top: 5rem;
+}
+
+.suit-footer nav {
+    position: relative;
+    padding: 0 1rem;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.suit-footer nav li{
+    
+    padding: 1rem 0.5rem;
+    
 }
 
 
@@ -143,35 +162,35 @@ footer nav {
     color: var(--darkgrey);
 }
 
-.user-guide  article{
+.user-guide article {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
-.user-guide > h2{
+
+.user-guide>h2 {
     color: var(--primary);
 }
 
 
 
+
+
+
+
 @media screen and (max-width: 768px) {
 
-    .hamburger-menu {
+    .nav-list-sidebar {
+        display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 0;
-        row-gap: 1rem;
-        z-index: 1;
-        width: 100%;
-        height: auto;
+        justify-content: center;
+        width: 150px;
+        position: fixed;
+        top: 5rem;
+        right: 0;
         background-color: black;
         opacity: 0.8;
-        padding: 20px 20px;
-        color: var(--primary);
-        font-weight: bold;
+
     }
 
-    .hamburger-menu .hamburger{
-        align-self: flex-end;
-    }
 }

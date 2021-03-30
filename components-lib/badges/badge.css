@@ -3,7 +3,7 @@
     position: relative;
 }
 
-.badge.badge-icon{
+.badge-icon{
     color: black;
     font-size: small;
     font-weight: bold;
@@ -15,33 +15,24 @@
     background-color: var(--primary);
 }
 
-.badge .status-badge{
+.badge-status{
     color: green;
     position: absolute;
     right: 0.1rem;
     bottom: 0.1rem;
 }
 
-.status-badge.small{
+.badge-status-small{
     font-size: smaller;
-    
 }
 
-.status-badge.medium{
+.badge-status-medium{
     font-size: small;
     right: 0.3rem;
     bottom: 0.3rem;
 }
 
-.status-badge.large{
+.badge-status-large{
     right: 0.4rem;
     bottom: 0.3rem;
 }
-
-
-
-
-
-/* .avatar.small ~ .status-badge{
-    right: 0;
-} */

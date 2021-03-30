@@ -1,40 +1,64 @@
-:root{
-    --primary: #01dcfc;
-}
 
-.primary-button{
-    width: max-content;
+
+.bttn{
+    width: max-content; 
     letter-spacing: 1px;
     background-color: var(--primary);
-    border: 0.5px  black;
-    border-radius: 5px ;
-    padding: 5px 10px;
+    padding: 0.1rem 0.5rem;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
 }
 
-.secondary-button{
-    width: max-content;
-    letter-spacing: 1px;
-    border: 1px solid var(--primary);
-    background-color: white;
-    border-radius: 5px ;
-    padding: 5px 10px;
+.bttn:after {
+    content: "";
+    background: black;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  .bttn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+.bttn-primary{
+    border-color: var(--primary) ;   
 }
 
-.icon-button{
-    width: max-content;
-    background-color: var(--primary);
-    border: var(--primary);
-    border-radius: 5px ;
-    padding: 5px 10px;
+.bttn-secondary{
+    background-color:white;
+    border-color: var(--primary) ;
 }
 
-.floating-action-button{
-    /* width: max-content; */
-    background-color: var(--primary);
+.bttn-secondary:after{
+    background: var(--primary);
+}
+
+.bttn-icon{
+    padding: auto;
+    letter-spacing: normal;
+    border-color: var(--primary);
+}
+
+.bttn-floating-action{
+    letter-spacing: normal;
+    padding: 0;
     border: 15px solid var(--primary);
-    /* padding: 2px 5px; */
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
     color: whitesmoke;
+    position: fixed;
+    bottom: 5rem;
+    right: 3vw;
 }

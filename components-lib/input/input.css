@@ -5,12 +5,12 @@
     outline: none;
 }
 
-.primary{
+.input-primary{
     border: 1.5px solid var(--primary);
 
 }
 
-.secondary{
+.input-secondary{
     border-radius: 2px;
     border-bottom: 1.5px solid var(--primary);
     
