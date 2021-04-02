@@ -1,0 +1,219 @@
+/* Import Components CSS */
+
+@import url("../components-lib/avatars/avatar.css");
+@import url("../components-lib/alerts/alert.css");
+@import url("../components-lib/badges/badge.css");
+@import url("../components-lib/button/button.css");
+@import url("../components-lib/cards/cards.css");
+@import url("../components-lib/images/image.css");
+@import url("../components-lib/input/input.css");
+@import url("../components-lib/lists/lists.css");
+@import url("../components-lib/nav/navBar.css");
+@import url("../components-lib/modal/modal.css");
+@import url("../components-lib/rating/rating.css");
+@import url("../components-lib/grids/grids.css");
+@import url("../components-lib/text-utilities/text-utilities.css");
+@import url("../components-lib/toasts/toasts.css");
+@import url("../components-lib/notify/notify.css");
+
+
+/* Font Import*/
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+/* Doc site styles */
+@import url("./doc-site.css");
+
+
+
+/* Landing page CSS */
+
+:root {
+    --primary: #01dcfc;
+    --darkgrey: #4B5563;
+    --gray: gray;
+    --gray50: #F9FAFB;
+    --bgcolor: whitesmoke;
+    --badgeColor:#4B5563;
+
+    /* alert colors */
+    --alertSuccesColor: #A7F3D0;
+    --alertErrorColor: #FCA5A5;
+    --alertWarningColor: #FEF3C7;
+    --alertInfoColor: #C7D2FE;
+    --alertSuccesColorBorder: #059669;
+    --alertErrorColorBorder: #EF4444;
+    --alertWarningColorBorder: #FCD34D;
+    --alertInfoColorBorder: #60A5FA;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    text-align: center;
+    margin: auto;
+    font-family: 'Lexend', sans-serif;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+.shadow-text-white {
+    font-size: 2rem;
+    text-shadow: 1px 1px whitesmoke;
+}
+
+.suit-header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.suit-header nav{
+    position: sticky;
+    z-index: 1;
+}
+
+.suit-header li:hover{
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.suit-body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    width: 80%;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
+.suit-body .suit-about {
+    width: 55%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: left;
+    color: var(--darkgrey);
+}
+
+.suit-about>h1 {
+    color: var(--primary);
+    font-size: 4rem;
+    font-weight: 1000;
+    text-shadow: 2px 2px var(--darkgrey);
+}
+
+
+.suit-body .suit-avatar {
+    max-width: 35%;
+}
+
+.suit-body footer {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 5px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+.suit-body footer button{
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    margin: 1rem 0rem;
+}
+
+.suit-body footer .bttn-primary:hover{
+    background-color: white;
+    border-color: black ;
+}
+
+.suit-body footer .bttn-secondary:hover{
+    background-color:var(--primary);
+    border-color: black ;
+}
+
+
+.suit-footer{
+    margin-top: 5rem;
+}
+
+.suit-footer nav {
+    position: relative;
+    padding: 0 1rem;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.suit-footer nav li{
+    
+    padding: 1rem 0.5rem;
+    
+}
+
+.user-guide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    row-gap: 2rem;
+    font-size: 1.5rem;
+    color: var(--darkgrey);
+}
+
+.user-guide article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.user-guide>h2 {
+    color: var(--primary);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .nav-list-sidebar {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        top: 4rem;
+        right: 0;
+        background-color: black;
+        opacity: 0.8;
+
+    }
+
+    .suit-body footer button{
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        margin: 0.4rem 0rem;
+    }
+    
+
+}
