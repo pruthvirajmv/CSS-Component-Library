@@ -1,8 +1,6 @@
 /* Doc Site styles */
 
-.doc-body{
-    margin-bottom: 5rem;
-}
+
 
 .doc-layout {
     display: grid;
@@ -12,11 +10,11 @@
         "doc-footer";
     position: relative;
     column-gap: 0.5rem;
-    overflow: auto;
 }
 
 .components-doc .heading {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 
@@ -99,23 +97,31 @@
     .components-nav-sidebar{
         display: flex;
         flex-direction: column;
+        align-items: center;
         background-color: black;
         opacity: 0.9;
         color: var(--primary);
         position: fixed;
         z-index: 1;
         padding: 0.5rem 1rem;
+        width: 100%;
     }
 
     .components-nav-sidebar ul{
+        text-align: left;
         list-style: none;
         padding: 1rem 0;
     }
 
     .components-nav-sidebar li{
-        text-align: left;
-        padding-top: 0.1rem;
+        padding-top: 0.5rem;
         padding-left: 1.5rem;
+    }
+
+    .components-nav-sidebar li:hover{
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
     }
 }
 
@@ -164,6 +170,11 @@
         letter-spacing: 0.1rem;
         font-weight: bold;
         padding-bottom: 0.5rem;
+    }
+
+    .components-nav li:hover{
+        color: var(--primary);
+        font-size: 1.5rem;
     }
 
     .components-doc {

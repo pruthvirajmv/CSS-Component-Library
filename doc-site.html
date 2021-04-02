@@ -15,7 +15,13 @@
 <body>
 
     <header class="suit-header">
-        <nav class="nav nav-dark ">
+        <script>
+            var shiftWindow = function() { scrollBy(0, -100) };
+            window.addEventListener("hashchange", shiftWindow);
+            function load() { if (window.location.hash) shiftWindow(); }
+            console.log(window.location)
+          </script>
+        <nav class="nav nav-dark " >
             <h1 class="shadow-text-white"><a href="./index.html">DEV sUIt</a></h1>
             <button class="hamburger"><i class="fa fa-bars fa-2x" aria-hidden="true"
                     id="hamburgerBttn-doc"></i></button>
